@@ -1,5 +1,6 @@
 language: cpp
 os: linux
+install: pip install --user cpplint
 script: 
-    - g++ -Wall main.cpp
-    - scan-build ./a.out
+    - cpplint *.cpp
+    - scan-build --status-bugs make
