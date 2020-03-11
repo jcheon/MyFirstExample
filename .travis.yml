@@ -2,3 +2,4 @@ language: cpp
 os: linux
 script: 
     - g++ -Wall main.cpp
+    - scan-build ./a.out
