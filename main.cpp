@@ -4,12 +4,10 @@ using std::cin;
 using std::cout;
 using std::endl;
 
-int main()
-{
+int main(){
+    cout << "Hi, please enter two numbers: ";
 
-    cout<<"Hi, please enter two numbers: ";
-
-    int x,y;
+    int x, y;
 
     cin >> x >> y;
     cout << x + y << endl;
